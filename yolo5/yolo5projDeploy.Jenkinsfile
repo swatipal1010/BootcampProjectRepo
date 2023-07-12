@@ -2,7 +2,7 @@ pipeline {
      agent any
 
     parameters { 
-        string(name: '854171615125.dkr.ecr.us-east-2.amazonaws.com/swati-yolo5:0.0.9', defaultValue: '', description: '')
+        string(name: '854171615125.dkr.ecr.us-east-2.amazonaws.com/swati-yolo5:0.0.12', defaultValue: '', description: '')
          }
     
     environment {
