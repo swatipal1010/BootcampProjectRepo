@@ -30,7 +30,7 @@ pipeline {
         stage('Deploying on k8s') {
             steps {
                    sh '''
-                        cd "../K8s-manifest-files"
+                        cd yolo5
                         kubectl apply -f ${MANIFEST_FILE}
                    '''
             }
