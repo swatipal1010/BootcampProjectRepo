@@ -43,8 +43,8 @@ pipeline {
 
         stage('Trigger Deploy') {
     steps {
-        build job: 'Yolo5Deploy', wait: false, parameters: [
-            string(name: '854171615125.dkr.ecr.us-east-2.amazonaws.com/swati-yolo5:0.0.9', value: "854171615125.dkr.ecr.us-east-2.amazonaws.com/swati-yolo5:0.0.${BUILD_NUMBER}")
+        build job: 'yolo5projDeployment', wait: false, parameters: [
+            string(name: '854171615125.dkr.ecr.us-east-2.amazonaws.com/swati-yolo5:0.0.10', value: "854171615125.dkr.ecr.us-east-2.amazonaws.com/swati-yolo5:0.0.${BUILD_NUMBER}")
         ]
     }
 }
