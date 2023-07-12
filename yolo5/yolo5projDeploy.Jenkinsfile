@@ -17,7 +17,7 @@ pipeline {
                     sh 'echo "Deploying process started"'
             }
         }
-        stage('Connect to the k8s cluster') {
+        stage('Connecting to the k8s cluster') {
             steps {
                     sh 'aws eks --region ${AWS_REGION_K8S} update-kubeconfig --name ${K8S_CLUSTER_NAME}'
             }
